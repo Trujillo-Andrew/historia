@@ -1,0 +1,10 @@
+$primary: #b08968;
+
+// Import
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+:root {
+  --bs-body-font-family: 'Hubballi', cursive;
+}
