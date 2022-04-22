@@ -40,24 +40,17 @@ header .overlay {
   z-index: 1;
 }
 
+
+
 /* Parallax Styles */
 
-.parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/img/fancyrest.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;
+.parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/img/parallax1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;
 }
+
 
 .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(/img/chef.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;
 }
 
-/* section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-} */
 
 
 
@@ -71,6 +64,26 @@ header .overlay {
   }
 
   header video {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  section #parallax-one {
+    background: url('/img/parallax1.jpg') black no-repeat center center scroll;
+  }
+
+  header .parallax-one {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  section #parallax-two {
+    background: url('/img/chef.jpg') black no-repeat center center scroll;
+  }
+
+  header .parallax-two {
     display: none;
   }
 }
